@@ -8,17 +8,15 @@ from sklearn.feature_extraction.text import CountVectorizer
 from textblob import TextBlob
 import json
 
-DIR = os.getcwd()
-
 # load model and saved variables
 '''
 Logistic Regression Classifier - Accuracy: 85.06
 '''
-with open(DIR + '/models/LogReg/LogReg_SA_K3.pickle', 'rb') as f:
+with open('./LogReg_SA_K3.pickle', 'rb') as f:
     clf = pickle.load(f)
 
 # count vectorizer
-with open(DIR + '/models/LogReg/LogReg_SA_K3_vectorizer.pickle', 'rb') as f:
+with open('./LogReg_SA_K3_vectorizer.pickle', 'rb') as f:
     vectorizer = pickle.load(f)
 
 def sentiment(review):
@@ -36,7 +34,7 @@ def sentiment_score(review):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/sentiment_analysis/api/v2.0/customer_review', methods=['POST'])
+@app.route('/api/v1/sentiment/', methods=['POST'])
 def senitmentAnalysis():
     '''
     data = ['marketplace', 'customer_id', 'review_id', 'product_id',
