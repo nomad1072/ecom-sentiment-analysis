@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from flask_cors import CORS, cross_origin
+# from flask_cors import CORS, cross_origin
 import pickle
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer
@@ -30,7 +30,7 @@ def sentiment_score(review):
     return TextBlob(review).sentiment.polarity
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 @app.route('/api/v1/sentiment/', methods=['POST'])
 def senitmentAnalysis():
