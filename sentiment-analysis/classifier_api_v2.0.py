@@ -1,8 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
-import os
 import pickle
-# nltk.download('punkt')
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer
 from textblob import TextBlob
