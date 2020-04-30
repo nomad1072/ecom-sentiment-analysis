@@ -37,9 +37,7 @@ timeseries_query_string = """
             "extractionFn": null
             }
         },
-        "granularity": {
-            "type": "all"
-        },
+        "granularity": "day",
         "aggregations": [
             {
             "type": "count",
