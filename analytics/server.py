@@ -10,9 +10,6 @@ from druid.topN import topN_query_string
 import requests
 import json
 
-s = requests.session()
-s.config['keep_alive'] = False
-
 app = Flask(__name__)
 druid_url = "http://34.82.43.25:8888/druid/v2"
 CORS(app)
@@ -25,9 +22,10 @@ def average_sentiment():
             'Content-Type': 'application/json',
             'Connection':'close'
         }
-        response = requests.request("POST", druid_url, headers=headers, data=sentiment_query_string).json()
-
-        return make_response(jsonify(response), 200)
+        response = requests.request("POST", druid_url, headers=headers, data=sentiment_query_string)
+        result = response.json()
+        response.close()
+        return make_response(jsonify(result), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
         return make_response(jsonify(response), 500)
@@ -43,9 +41,11 @@ def event_count():
             'Content-Type': 'application/json',
             'Connection':'close'
         }
-        response = requests.request("POST", druid_url, headers=headers, data=sentiment_query).json()
+        response = requests.request("POST", druid_url, headers=headers, data=sentiment_query)
+        result = response.json()
+        response.close()
 
-        return make_response(jsonify(response), 200)
+        return make_response(jsonify(result), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
         return make_response(jsonify(response), 500)
@@ -58,9 +58,10 @@ def timeseries():
             'Content-Type': 'application/json',
             'Connection':'close'
         }
-        response = requests.request("POST", druid_url, headers=headers, data=timeseries_query_string).json()
-
-        return make_response(jsonify(response), 200)
+        response = requests.request("POST", druid_url, headers=headers, data=timeseries_query_string)
+        result = response.json()
+        response.close()
+        return make_response(jsonify(result), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
         return make_response(jsonify(response), 500)
@@ -72,9 +73,11 @@ def topN():
             'Content-Type': 'application/json',
             'Connection':'close'
         }
-        response = requests.request("POST", druid_url, headers=headers, data=topN_query_string).json()
-
-        return make_response(jsonify(response), 200)
+        response = requests.request("POST", druid_url, headers=headers, data=topN_query_string)
+        print('Response: ', response.close())
+        result = response.json()
+        response.close()
+        return make_response(jsonify(result), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
         return make_response(jsonify(response), 500)
