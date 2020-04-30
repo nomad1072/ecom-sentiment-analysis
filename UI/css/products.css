@@ -1,10 +1,12 @@
-.topProducts{
-  height: 100%;
-  display: block;
-  margin: 2.5%;
+.topProductsRow{
+  height: 40%;
+  display: flex;
+  margin: 1%;
 }
 
 .product{
-  margin: 2% 0;
-  min-height: 6%;
+  margin: 0.5% 1%;
+  min-height: 8%;
+  min-width: 18%;
+  background-color: #F6F6FF;
 }
