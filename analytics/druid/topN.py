@@ -4,18 +4,23 @@ TopN products by events
 topN_query_string = """
     
     {
-        "queryType": "topN",
+        "queryType": "groupBy",
         "dataSource": {
             "type": "table",
             "name": "flink-output-1"
         },
         "virtualColumns": [],
-        "dimension": {
+        "dimensions": [{
             "type": "default",
             "dimension": "product_name",
             "outputName": "product_name",
             "outputType": "STRING"
-        },
+        }, {
+            "type": "default",
+            "dimension": "product_catalog",
+            "outputName": "product_catalog",
+            "outputType": "STRING"
+            }],
         "metric": {
             "type": "numeric",
             "metric": "sentiment_sum"
@@ -24,7 +29,7 @@ topN_query_string = """
         "intervals": {
             "type": "intervals",
             "intervals": [
-            "2020-04-27T01:10:36.000Z/146140482-04-24T15:36:27.903Z"
+                "2020-04-27T01:10:36.000Z/146140482-04-24T15:36:27.903Z"
             ]
         },
         "filter": {
@@ -37,14 +42,14 @@ topN_query_string = """
         },
         "aggregations": [
             {
-            "type": "count",
-            "name": "count"
+                "type": "count",
+                "name": "count"
             },
             {
-            "type": "doubleSum",
-            "name": "sentiment_sum",
-            "fieldName": "average_sentiment",
-            "expression": null
+                "type": "doubleSum",
+                "name": "sentiment_sum",
+                "fieldName": "average_sentiment",
+                "expression": null
             }
         ],
         "postAggregations": [],
