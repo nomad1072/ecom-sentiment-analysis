@@ -10,6 +10,9 @@ from druid.topN import topN_query_string
 import requests
 import json
 
+s = requests.session()
+s.config['keep_alive'] = False
+
 app = Flask(__name__)
 druid_url = "http://34.82.43.25:8888/druid/v2"
 CORS(app)
@@ -18,7 +21,10 @@ CORS(app)
 def average_sentiment():
     try:
         sentiment_query_string = sentiment_query()
-        headers = { 'Content-Type': 'application/json' }
+        headers = { 
+            'Content-Type': 'application/json',
+            'Connection':'close'
+        }
         response = requests.request("POST", druid_url, headers=headers, data=sentiment_query_string).json()
 
         return make_response(jsonify(response), 200)
@@ -33,7 +39,10 @@ def event_count():
         print("Product catalog: ", product_catalog)
         sentiment_query = event_count_query(product_catalog)
 
-        headers = { 'Content-Type': 'application/json' }
+        headers = { 
+            'Content-Type': 'application/json',
+            'Connection':'close'
+        }
         response = requests.request("POST", druid_url, headers=headers, data=sentiment_query).json()
 
         return make_response(jsonify(response), 200)
@@ -45,7 +54,10 @@ def event_count():
 def timeseries():
     try:
         timeseries_query = json.loads(timeseries_query_string)
-        headers = { 'Content-Type': 'application/json' }
+        headers = { 
+            'Content-Type': 'application/json',
+            'Connection':'close'
+        }
         response = requests.request("POST", druid_url, headers=headers, data=timeseries_query_string).json()
 
         return make_response(jsonify(response), 200)
@@ -56,7 +68,10 @@ def timeseries():
 @app.route("/api/v1/topN", methods=['POST'])
 def topN():
     try:
-        headers = { 'Content-Type': 'application/json' }
+        headers = { 
+            'Content-Type': 'application/json',
+            'Connection':'close'
+        }
         response = requests.request("POST", druid_url, headers=headers, data=topN_query_string).json()
 
         return make_response(jsonify(response), 200)
