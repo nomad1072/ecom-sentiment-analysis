@@ -53,6 +53,19 @@ topN_query_string = """
             }
         ],
         "postAggregations": [],
+        "limitSpec": {
+            "type": "default",
+            "columns": [
+                {
+                    "dimension": "count",
+                    "direction": "descending",
+                    "dimensionOrder": {
+                    "type": "numeric"
+                    }
+                }
+            ],
+            "limit": 10
+        },
         "context": {
             "sqlOuterLimit": 100,
             "sqlQueryId": "1c83447c-cfe3-4756-b033-45565252fc31"
