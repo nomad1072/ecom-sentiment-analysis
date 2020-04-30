@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, make_response
+from flask_cors import CORS
 from typing import List, Dict
 
 from druid.sentiment import sentiment_query
@@ -11,7 +12,7 @@ import json
 
 app = Flask(__name__)
 druid_url = "http://34.82.43.25:8888/druid/v2"
-
+CORS(app)
 
 @app.route("/api/v1/average_sentiment", methods=['POST'])
 def average_sentiment():
@@ -19,7 +20,7 @@ def average_sentiment():
         sentiment_query_string = sentiment_query()
         headers = { 'Content-Type': 'application/json' }
         response = requests.request("POST", druid_url, headers=headers, data=sentiment_query_string).json()
-        
+
         return make_response(jsonify(response), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
@@ -34,7 +35,7 @@ def event_count():
 
         headers = { 'Content-Type': 'application/json' }
         response = requests.request("POST", druid_url, headers=headers, data=sentiment_query).json()
-        
+
         return make_response(jsonify(response), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
@@ -46,7 +47,7 @@ def timeseries():
         timeseries_query = json.loads(timeseries_query_string)
         headers = { 'Content-Type': 'application/json' }
         response = requests.request("POST", druid_url, headers=headers, data=timeseries_query_string).json()
-        
+
         return make_response(jsonify(response), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
@@ -54,14 +55,14 @@ def timeseries():
 
 @app.route("/api/v1/topN", methods=['POST'])
 def topN():
-    try:        
+    try:
         headers = { 'Content-Type': 'application/json' }
         response = requests.request("POST", druid_url, headers=headers, data=topN_query_string).json()
-        
+
         return make_response(jsonify(response), 200)
     except Exception as e:
         response = { 'status': 'error', 'message': 'Internal Server Error', 'error': e.message }
-        return make_response(jsonify(response), 500)  
+        return make_response(jsonify(response), 500)
 
 
 if __name__ == "__main__":

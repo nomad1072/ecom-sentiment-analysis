@@ -1,0 +1,45 @@
+.category {
+  background-color: #F3F5F7;
+  border-radius: 4px;
+  text-align: left;
+  min-width: 31.33%;
+  padding: 0.2rem;
+  margin-left: 1%;
+  max-height: 85%;
+}
+.categories {
+  display: inline;
+  }
+.catRow {
+  display: flex;
+  height: 45%;
+  margin: 0.5%;
+}
+
+.categoryTitle {
+  min-width: 35px;
+  margin: 1.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.sentiValues {
+  display: inline;
+  text-align: center;
+}
+.sentiRow {
+  display: flex;
+  height: 25%;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.sentimentText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.value {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
