@@ -64,6 +64,7 @@ p {
   padding: 1rem;
   margin: 1% 1% 2.5% 2%;
   height: 50%;
+  overflow-y: scroll;
 }
 
 /* time series of events */

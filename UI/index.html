@@ -7,6 +7,7 @@
   <meta name="author" content="Pratik Pramod Revankar">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/sentiment.css">
+  <link rel="stylesheet" href="css/products.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:700|Montserrat:300,500|Roboto:100,300,400|Roboto+Mono:400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -33,89 +34,28 @@
       <div class="card prodCategory">
         <div class="cardTitle">Product Categories</div>
         <div class="timeFilter"></div>
-
         <!-- Category cards -->
         <div class="categories">
         <div class="catRow">
           <div class="card category" style="margin-left:-0.5%">
-            <div class="categoryTitle">Books</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="books">Books</div>
           </div>
           <div class="card category">
-            <div class="categoryTitle">Electronics</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="electronics">Electronics</div>
           </div>
           <div class="card category">
-            <div class="categoryTitle">Toys</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="toys">Toys</div>
           </div>
         </div>
         <div class="catRow">
           <div class="card category" style="margin-left:-0.5%">
-            <div class="categoryTitle">Apparel</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="apparels">Apparel</div>
           </div>
           <div class="card category">
-            <div class="categoryTitle">Kitchen</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="kitchen">Kitchen</div>
           </div>
           <div class="card category">
-            <div class="categoryTitle">Grocery</div>
-            <div class="sentiValues">
-              <div class="sentiRow">
-                <div class="sentimentText">Sentiment</div>
-                <div class="value">&nbspPositive</div>
-              </div>
-              <div class="sentiRow">
-                <div class="sentimentText">Score</div>
-                <div class="value">&nbsp0.85</div>
-              </div>
-            </div>
+            <div class="categoryTitle" id="grocery">Grocery</div>
           </div>
         </div>
         </div>
@@ -125,6 +65,18 @@
       <div class="card topNProd">
         <div class="cardTitle">Top Products</div>
         <div class="timeFilter"></div>
+        <div class="topProducts">
+          <div class="card product">Prod 1</div>
+          <div class="card product">Prod 2</div>
+          <div class="card product">Prod 3</div>
+          <div class="card product">Prod 4</div>
+          <div class="card product">Prod 5</div>
+          <div class="card product">Prod 6</div>
+          <div class="card product">Prod 7</div>
+          <div class="card product">Prod 8</div>
+          <div class="card product">Prod 9</div>
+          <div class="card product">Prod 10</div>                    
+        </div>
       </div>
     </div>
 
@@ -147,13 +99,62 @@
 
   <script type="text/javascript" src="js/sentiment.js"></script>
   <script type="text/javascript">
-    // get sentiment scores for product categories
+    // call async api(s)
     (async function() {
-      var sentimentResponse = await getSentiment()
-      // console.log('Logged here:',sentimentResponse)
-
+      // get sentiment scores for product categories
+      // var sentimentResponse = await getSentiment()
+      // loadSentimentData(JSON.parse(sentimentResponse)[0])
     })()
 
+
+    function loadSentimentData(sentimentResponse){
+      // Populate category Cards
+      for (cat in sentimentResponse.result){
+        var count = sentimentResponse.result[cat].count;
+        var score = sentimentResponse.result[cat].sentiment;
+        var avg_score = (score/count).toFixed(2)
+        var sentiment;
+        if (avg_score > 0){
+          sentiment = 'Positive'
+        }
+        else if (avg_score < 0){
+          sentiment = 'Negative'
+        }
+        else{
+          sentiment = 'Neutral'
+        }
+        var cardData = '<div class="sentiValues"><div class="sentiRow"><div class="sentimentText">Sentiment</div><div class="value">&nbsp' + sentiment + '</div></div><div class="sentiRow"><div class="sentimentText">Score</div><div class="value">&nbsp' + avg_score + '</div></div></div>'
+        // console.log(count, score, avg_score, sentiment, sentimentResponse.result[cat].product_catalog)
+        switch(sentimentResponse.result[cat].product_catalog) {
+          case 'books':
+            var books = document.getElementById('books')
+            books.innerHTML += cardData
+            break;
+          case 'toys':
+            var books = document.getElementById('toys')
+            books.innerHTML += cardData
+            break;
+          case 'apparel':
+            var books = document.getElementById('apparel')
+            books.innerHTML += cardData
+            break;
+          case 'electronics':
+            var books = document.getElementById('electronics')
+            books.innerHTML += cardData
+            break;
+          case 'grocery':
+            var books = document.getElementById('grocery')
+            books.innerHTML += cardData
+            break;
+          case 'books':
+            var books = document.getElementById('kitchen')
+            books.innerHTML += cardData
+            break;
+          default:
+            console.log('Category not found')
+        }
+      }
+    }
   </script>
 
 </body>
