@@ -16,10 +16,7 @@ druid_url = "http://34.82.43.25:8888/druid/v2"
 @app.route("/api/v1/average_sentiment", methods=['POST'])
 def average_sentiment():
     try:
-        print('Request.json: ', request.json)
-        product_catalog = request.json["product_catalog"]
-        print("Product catalog: ", product_catalog)
-        sentiment_query_string = sentiment_query(product_catalog)
+        sentiment_query_string = sentiment_query()
         headers = { 'Content-Type': 'application/json' }
         response = requests.request("POST", druid_url, headers=headers, data=sentiment_query_string).json()
         
