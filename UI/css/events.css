@@ -1,0 +1,36 @@
+.events{
+  display: flex;
+  padding: 1rem;
+  margin: 1% 1% 2% 2%;
+  height: 50%;
+}
+.event{
+  margin: 0.5% 1%;
+  max-height: 90%;
+  min-width: 31%;
+  background-color: #FFFFEF;
+}
+
+
+.eventTitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 5%;
+  text-align: center;
+}
+.event_count{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  padding: 5%;
+  margin: 15% 5% 5% 5%;
+  text-align: center;
+}
+
+#selectedCategory {
+  margin: 2.5%;
+  font-size: 1rem;
+  text-align: center;
+  width: 25%;
+}

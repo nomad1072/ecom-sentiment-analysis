@@ -64,7 +64,6 @@ p {
   padding: 1rem;
   margin: 1% 1% 2.5% 2%;
   height: 50%;
-  overflow-y: scroll;
 }
 
 /* time series of events */
@@ -95,38 +94,10 @@ p {
 }
 
 
-#selectedDateActivity, #selectedDateHeart {
-  font-size: 0.8rem;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  text-align: center;
-  width: 80%;
-}
-#selectedDateWorkout {
-  font-size: 0.8rem;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  text-align: center;
-  width: 25%;
-}
 #selectedDateSleep, #selectedDateAudio {
   font-size: 0.8rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   text-align: center;
   width: 75%;
-}
-#selectedMonthActivity, #selectedYearActivity, #selectedMonthHeart, #selectedYearHeart {
-  margin-top: 2.5%;
-  font-size: 1rem;
-  text-align: center;
-  width: 90%;
-}
-#graphTitle {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 0.6rem;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: -2%
 }

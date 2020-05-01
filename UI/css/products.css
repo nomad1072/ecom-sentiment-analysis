@@ -1,10 +1,27 @@
-.topProducts{
-  height: 100%;
-  display: block;
-  margin: 2.5%;
+.topProductsRow{
+  height: 40%;
+  display: flex;
+  margin: 1%;
+}
+.product{
+  margin: 0 1%;
+  max-height: 8%;
+  min-width: 18%;
+  background-color: #F6F6FF;
 }
 
-.product{
-  margin: 2% 0;
-  min-height: 6%;
+.productTitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  padding: 5%;
+  margin: 15% 5% 5% 5%;
+  text-align: center;
+  word-wrap: break-word;
+}
+.prodSentiment{
+  font-family: 'Roboto', monospace;
+  font-weight: 100;
+  padding: 0 25% 5% 25%;
+  text-align: center;
 }
