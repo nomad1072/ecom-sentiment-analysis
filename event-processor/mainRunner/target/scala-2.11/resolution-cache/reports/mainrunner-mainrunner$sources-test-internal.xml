@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="mainrunner"
+		module="mainrunner$sources"
+		revision="0.1.0-SNAPSHOT"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20200428234836"/>
+	<dependencies>
+		<module organisation="org.siddharth" name="event-processor_2.11">
+			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20200428234821" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="49">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.1-SNAPSHOT" rev-constraint-default="0.1-SNAPSHOT" rev-constraint-dynamic="0.1-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-streaming-scala_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207124035" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23555" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-streaming-scala_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-streaming-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="90213" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-streaming-scala_2.11/srcs/flink-streaming-scala_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-scala_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207122826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="47">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="25337" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-scala_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-scala_2.11/1.10.0/flink-scala_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-scala_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="142655" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-scala_2.11/srcs/flink-scala_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-scala_2.11/1.10.0/flink-scala_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.liftweb" name="lift-json_2.11">
+			<revision name="3.4.1" status="release" pubdate="20200118064302" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3735" time="0" location="/Users/siddharthlanka/.ivy2/cache/net.liftweb/lift-json_2.11/ivy-3.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-json_2.11/3.4.1/lift-json_2.11-3.4.1.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.4.1" rev-constraint-default="3.4.1" rev-constraint-dynamic="3.4.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lift-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="41125" time="0" location="/Users/siddharthlanka/.ivy2/cache/net.liftweb/lift-json_2.11/srcs/lift-json_2.11-3.4.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-json_2.11/3.4.1/lift-json_2.11-3.4.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.2.0" status="release" pubdate="20190405090815" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3266" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="111656" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.2.0/scala-xml_2.11-1.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.11.12" status="release" pubdate="20171103070755" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2642" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scalap/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.12/scalap-2.11.12.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37159" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.12/scalap-2.11.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.11.12" status="release" pubdate="20171103070744" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3262" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2224830" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.11.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-kafka_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207125916" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="35031" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-connector-kafka_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka_2.11/1.10.0/flink-connector-kafka_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-connector-kafka_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="51197" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-connector-kafka_2.11/srcs/flink-connector-kafka_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka_2.11/1.10.0/flink-connector-kafka_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="kafka-clients">
+			<revision name="2.2.0" status="release" pubdate="20190309144348" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3997" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.kafka/kafka-clients/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.2.0/kafka-clients-2.2.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="kafka-clients" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1683981" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.kafka/kafka-clients/srcs/kafka-clients-2.2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.2.0/kafka-clients-2.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaj" name="scalaj-http_2.11">
+			<revision name="2.4.2" status="release" pubdate="20190615110254" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3441" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scalaj/scalaj-http_2.11/ivy-2.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/2.4.2/scalaj-http_2.11-2.4.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalaj-http_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15659" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scalaj/scalaj-http_2.11/srcs/scalaj-http_2.11-2.4.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/2.4.2/scalaj-http_2.11-2.4.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.10.6" status="release" pubdate="20200424040118" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6902" time="0" location="/Users/siddharthlanka/.ivy2/cache/joda-time/joda-time/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.6/joda-time-2.10.6.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="824202" time="0" location="/Users/siddharthlanka/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.10.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.6/joda-time-2.10.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.luben" name="zstd-jni">
+			<revision name="1.3.8-1" status="release" pubdate="20190108171138" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/luben/zstd-jni" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="BSD 2-Clause License" url="https://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="no" details="" size="2874" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.github.luben/zstd-jni/ivy-1.3.8-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.8-1/zstd-jni-1.3.8-1.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.8-1" rev-constraint-default="1.3.8-1" rev-constraint-dynamic="1.3.8-1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="zstd-jni" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="16750" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.github.luben/zstd-jni/srcs/zstd-jni-1.3.8-1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.8-1/zstd-jni-1.3.8-1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.12" status="release" pubdate="20171103070736" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="567508" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.7.2" status="release" pubdate="20180521121930" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.2/snappy-java-1.1.7.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.7.2" rev-constraint-default="1.1.7.2" rev-constraint-dynamic="1.1.7.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2012287" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.xerial.snappy/snappy-java/srcs/snappy-java-1.1.7.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.2/snappy-java-1.1.7.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.12" status="release" pubdate="20200304054655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11457" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.5.12" rev-constraint-default="4.5.12" rev-constraint-dynamic="4.5.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="732956" time="526" location="/Users/siddharthlanka/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.11" status="release" pubdate="20171017085430" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12632" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-codec/commons-codec/ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="342809" time="472" location="/Users/siddharthlanka/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.13" status="release" pubdate="20200109055743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9541" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="4.4.13" rev-constraint-default="4.4.13" rev-constraint-dynamic="4.4.13" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="409303" time="493" location="/Users/siddharthlanka/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.13-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140705234228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11623" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73295" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20150826165928" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4254" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27125" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-connector-kafka-base_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207125254" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="36284" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-connector-kafka-base_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka-base_2.11/1.10.0/flink-connector-kafka-base_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-connector-kafka-base_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="87760" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-connector-kafka-base_2.11/srcs/flink-connector-kafka-base_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka-base_2.11/1.10.0/flink-connector-kafka-base_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-streaming-java_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207123315" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22606" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-streaming-java_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-streaming-java_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778676" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-streaming-java_2.11/srcs/flink-streaming-java_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-clients_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207123228" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22335" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-clients_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-clients_2.11/1.10.0/flink-clients_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-clients_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="96045" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-clients_2.11/srcs/flink-clients_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-clients_2.11/1.10.0/flink-clients_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-optimizer_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207123205" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22098" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-optimizer_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-optimizer_2.11/1.10.0/flink-optimizer_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-optimizer_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="276410" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-optimizer_2.11/srcs/flink-optimizer_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-optimizer_2.11/1.10.0/flink-optimizer_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-runtime_2.11">
+			<revision name="1.10.0" status="release" pubdate="20200207122721" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="28182" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-runtime_2.11/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime_2.11/1.10.0/flink-runtime_2.11-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-runtime_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2884331" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-runtime_2.11/srcs/flink-runtime_2.11-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-runtime_2.11/1.10.0/flink-runtime_2.11-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.lz4" name="lz4-java">
+			<revision name="1.5.0" status="release" pubdate="20180925112742" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lz4/lz4-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2736" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.lz4/lz4-java/ivy-1.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.5.0/lz4-java-1.5.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.5.0" rev-constraint-default="1.5.0" rev-constraint-dynamic="1.5.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lz4-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62985" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.lz4/lz4-java/srcs/lz4-java-1.5.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.5.0/lz4-java-1.5.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="chill_2.11">
+			<revision name="0.7.6" status="release" pubdate="20170113175811" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3172" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.twitter/chill_2.11/ivy-0.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.7.6/chill_2.11-0.7.6.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.7.6" rev-constraint-default="0.7.6" rev-constraint-dynamic="0.7.6" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="chill_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="35177" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.twitter/chill_2.11/srcs/chill_2.11-0.7.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.7.6/chill_2.11-0.7.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.twitter" name="chill-java">
+			<revision name="0.7.6" status="release" pubdate="20170113175933" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twitter/chill" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2890" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.twitter/chill-java/ivy-0.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.7.6" rev-constraint-default="0.7.6" rev-constraint-dynamic="0.7.6" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60121" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.twitter/chill-java/srcs/chill-java-0.7.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scopt" name="scopt_2.11">
+			<revision name="3.5.0" status="release" pubdate="20160612053600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scopt/scopt" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2797" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.github.scopt/scopt_2.11/ivy-3.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.11/3.5.0/scopt_2.11-3.5.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scopt_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7753" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.github.scopt/scopt_2.11/srcs/scopt_2.11-3.5.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.11/3.5.0/scopt_2.11-3.5.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.clapper" name="grizzled-slf4j_2.11">
+			<revision name="1.3.2" status="release" pubdate="20171204165058" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-slf4j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="BSD" url="http://software.clapper.org/grizzled-slf4j/license.html"/>
+				<metadata-artifact status="no" details="" size="2981" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.clapper/grizzled-slf4j_2.11/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.3.2/grizzled-slf4j_2.11-1.3.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="grizzled-slf4j_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3102" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.clapper/grizzled-slf4j_2.11/srcs/grizzled-slf4j_2.11-1.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.3.2/grizzled-slf4j_2.11-1.3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
+			<revision name="2.5.21" status="release" pubdate="20190213052630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3348" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/ivy-2.5.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.5.21/akka-slf4j_2.11-2.5.21.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.21" rev-constraint-default="2.5.21" rev-constraint-dynamic="2.5.21" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2530" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/srcs/akka-slf4j_2.11-2.5.21-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.5.21/akka-slf4j_2.11-2.5.21-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-stream_2.11">
+			<revision name="2.5.21" status="release" pubdate="20190213052840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3546" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/ivy-2.5.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.21" rev-constraint-default="2.5.21" rev-constraint-dynamic="2.5.21" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21"/>
+				<artifacts>
+					<artifact name="akka-stream_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="514504" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/srcs/akka-stream_2.11-2.5.21-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="ssl-config-core_2.11">
+			<revision name="0.3.7" status="release" pubdate="20181024192050" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3716" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe/ssl-config-core_2.11/ivy-0.3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.11/0.3.7/ssl-config-core_2.11-0.3.7.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.3.7" rev-constraint-default="0.3.7" rev-constraint-dynamic="0.3.7" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="ssl-config-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49355" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe/ssl-config-core_2.11/srcs/ssl-config-core_2.11-0.3.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.11/0.3.7/ssl-config-core_2.11-0.3.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.1.1" status="release" pubdate="20180608211409" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2930" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.1/scala-parser-combinators_2.11-1.1.1.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47353" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.1/scala-parser-combinators_2.11-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reactivestreams" name="reactive-streams">
+			<revision name="1.0.2" status="release" pubdate="20200414212003" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2397" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="file:////Users/siddharthlanka/.sbt/preloaded/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3997" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-protobuf_2.11">
+			<revision name="2.5.21" status="release" pubdate="20190213052345" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2811" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/ivy-2.5.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.21/akka-protobuf_2.11-2.5.21.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.21" rev-constraint-default="2.5.21" rev-constraint-dynamic="2.5.21" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21"/>
+				<artifacts>
+					<artifact name="akka-protobuf_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="277110" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/srcs/akka-protobuf_2.11-2.5.21-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.21/akka-protobuf_2.11-2.5.21-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.5.21" status="release" pubdate="20190213052412" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3103" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.5.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.21" rev-constraint-default="2.5.21" rev-constraint-dynamic="2.5.21" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.21"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="567639" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.5.21-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.11">
+			<revision name="0.7.0" status="release" pubdate="20150831163233" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12469" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/srcs/scala-java8-compat_2.11-0.7.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.3" status="release" pubdate="20200414212003" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2730" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe/config/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="file:////Users/siddharthlanka/.sbt/preloaded/com/typesafe/config/1.3.3/config-1.3.3.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="172783" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.typesafe/config/srcs/config-1.3.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.12" status="release" pubdate="20171103070730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="31">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="912259" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.24.0-GA" status="release" pubdate="20181101111800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3415" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.javassist/javassist/ivy-3.24.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.24.0-GA" rev-constraint-default="3.24.0-GA" rev-constraint-dynamic="3.24.0-GA" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="545226" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.24.0-GA-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.3.1" status="release" pubdate="20150614153623" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10819" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-cli/commons-cli/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-cli" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58823" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-cli/commons-cli/srcs/commons-cli-1.3.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-hadoop-fs">
+			<revision name="1.10.0" status="release" pubdate="20200207132441" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="27239" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-hadoop-fs/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.10.0/flink-hadoop-fs-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-hadoop-fs" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="31073" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-hadoop-fs/srcs/flink-hadoop-fs-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.10.0/flink-hadoop-fs-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-queryable-state-client-java">
+			<revision name="1.10.0" status="release" pubdate="20200207132416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="25252" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-queryable-state-client-java/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.10.0/flink-queryable-state-client-java-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-queryable-state-client-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63921" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-queryable-state-client-java/srcs/flink-queryable-state-client-java-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.10.0/flink-queryable-state-client-java-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-java">
+			<revision name="1.10.0" status="release" pubdate="20200207132349" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22169" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-java/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-java/1.10.0/flink-java-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="292123" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-java/srcs/flink-java-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-java/1.10.0/flink-java-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.5" status="release" pubdate="20150414180919" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11195" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-math3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2325609" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-math3/srcs/commons-math3-3.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-core">
+			<revision name="1.10.0" status="release" pubdate="20200207132310" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23316" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-core/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1303127" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-core/srcs/flink-core-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.18" status="release" pubdate="20180813012452" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16134" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.18" rev-constraint-default="1.18" rev-constraint-dynamic="1.18" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="541624" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-compress/srcs/commons-compress-1.18-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.2" status="release" pubdate="20151113044126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11113" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="646075" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-collections/commons-collections/srcs/commons-collections-3.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.kryo" name="kryo">
+			<revision name="2.24.0" status="release" pubdate="20140504183438" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/EsotericSoftware/kryo" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3502" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.esotericsoftware.kryo/kryo/ivy-2.24.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.24.0" rev-constraint-default="2.24.0" rev-constraint-dynamic="2.24.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="kryo" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="126718" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.esotericsoftware.kryo/kryo/srcs/kryo-2.24.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.1" status="release" pubdate="20131011025537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3342" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.objenesis/objenesis/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="44014" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.esotericsoftware.minlog" name="minlog">
+			<revision name="1.2" status="release" pubdate="20120531175649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/minlog/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2665" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.esotericsoftware.minlog/minlog/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="minlog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2458" time="0" location="/Users/siddharthlanka/.ivy2/cache/com.esotericsoftware.minlog/minlog/srcs/minlog-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.3.2" status="release" pubdate="20140406175129" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10669" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="3.3.2" rev-constraint-default="3.3.2" rev-constraint-dynamic="3.3.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="470961" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120613035206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8704" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="246635" time="0" location="/Users/siddharthlanka/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-metrics-core">
+			<revision name="1.10.0" status="release" pubdate="20200207132127" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23796" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-metrics-core/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.10.0/flink-metrics-core-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-metrics-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23922" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-metrics-core/srcs/flink-metrics-core-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.10.0/flink-metrics-core-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.flink" name="flink-annotations">
+			<revision name="1.10.0" status="release" pubdate="20200207132030" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21469" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-annotations/ivy-1.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.10.0/flink-annotations-1.10.0.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.10.0" rev-constraint-default="1.10.0" rev-constraint-dynamic="1.10.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flink-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13986" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.apache.flink/flink-annotations/srcs/flink-annotations-1.10.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.10.0/flink-annotations-1.10.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.15" status="release" pubdate="20160209092958" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15.pom"/>
+				<caller organisation="mainrunner" name="mainrunner$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.7.15" rev-constraint-default="1.7.15" rev-constraint-dynamic="1.7.15" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55350" time="0" location="/Users/siddharthlanka/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.15-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
