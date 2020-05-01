@@ -64,7 +64,7 @@
 
       <!-- Top N Products -->
       <div class="card topNProd">
-        <div class="cardTitle">Top Products</div>
+        <div class="cardTitle">Active Products</div>
         <div class="timeFilter"></div>
         <div id="topProducts"></div>
       </div>
@@ -169,7 +169,7 @@
             books.innerHTML += cardData
             break;
           case 'apparel':
-            var books = document.getElementById('apparel')
+            var books = document.getElementById('apparels')
             books.innerHTML += cardData
             break;
           case 'electronics':
@@ -180,7 +180,7 @@
             var books = document.getElementById('grocery')
             books.innerHTML += cardData
             break;
-          case 'books':
+          case 'kitchen':
             var books = document.getElementById('kitchen')
             books.innerHTML += cardData
             break;
@@ -200,20 +200,6 @@
       if (productsResponse == null){
         productsResponse = {};
         N = 10;
-      }
-      // mocking data
-      var event = {
-                    "event": {
-                        "count": 18,
-                        "product_catalog": "books",
-                        "product_name": "The Alchemist",
-                        "sentiment_sum": 18.0
-                    },
-                    "timestamp": "2020-04-27T01:10:36.000Z",
-                    "version": "v1"
-                  }
-      for (i=0; i<N; i++){
-          productsResponse.push(event);
       }
 
       var counter = 0;

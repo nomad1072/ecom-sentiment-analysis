@@ -16,7 +16,7 @@ function plotChart(ctx, values, labels){
       responsive: true,
       title: {
         display: true,
-        text: 'Event Log'
+        text: 'Event Log for past week'
       },
       tooltips: {
         mode: 'index',
